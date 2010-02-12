@@ -2,607 +2,607 @@
 <org.drools.audit.event.ObjectLogEvent>
   <type>1</type>
   <factId>1</factId>
-  <objectToString>com.jboss.example.Employee@2d35da43</objectToString>
+  <objectToString>com.jboss.example.Employee@2200c550</objectToString>
 </org.drools.audit.event.ObjectLogEvent>
 <org.drools.audit.event.ObjectLogEvent>
   <type>1</type>
   <factId>2</factId>
-  <objectToString>com.jboss.example.WeeklyAccumulator@12c9b196</objectToString>
+  <objectToString>com.jboss.example.WeeklyAccumulator@7458e2a1</objectToString>
 </org.drools.audit.event.ObjectLogEvent>
 <org.drools.audit.event.ObjectLogEvent>
   <type>1</type>
   <factId>3</factId>
-  <objectToString>com.jboss.example.BusinessDay@74b9a74</objectToString>
+  <objectToString>com.jboss.example.BusinessDay@2f296d1d</objectToString>
 </org.drools.audit.event.ObjectLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>4</type>
   <activationId>CBU072_Accumulation_QualifierRule [4]</activationId>
   <rule>CBU072_Accumulation_QualifierRule</rule>
-  <declarations>$slice=com.jboss.example.TimeSlice@74893969(4)</declarations>
+  <declarations>$slice=com.jboss.example.TimeSlice@48baa31b(4)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>4</type>
   <activationId>CBU072_InsideSchedule_worked_Accumulation_Rule [4, 2, 1]</activationId>
   <rule>CBU072_InsideSchedule_worked_Accumulation_Rule</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@74893969(4); $FLSA=0(2); $elapsed=5(4); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@48baa31b(4); $FLSA=0(2); $elapsed=5(4); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>4</type>
   <activationId>CBU072_JTP_Overtime_RuleSet [2, 4, 1]</activationId>
   <rule>CBU072_JTP_Overtime_RuleSet</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@74893969(4); $FLSA=0(2); $elapsed=5(4); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@48baa31b(4); $FLSA=0(2); $elapsed=5(4); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ObjectLogEvent>
   <type>1</type>
   <factId>4</factId>
-  <objectToString>com.jboss.example.TimeSlice@74893969</objectToString>
+  <objectToString>com.jboss.example.TimeSlice@48baa31b</objectToString>
 </org.drools.audit.event.ObjectLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>4</type>
   <activationId>CBU072_Accumulation_QualifierRule [5]</activationId>
   <rule>CBU072_Accumulation_QualifierRule</rule>
-  <declarations>$slice=com.jboss.example.TimeSlice@355ccfb1(5)</declarations>
+  <declarations>$slice=com.jboss.example.TimeSlice@18f63055(5)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>4</type>
   <activationId>CBU072_JTP_Overtime_RuleSet [2, 5, 1]</activationId>
   <rule>CBU072_JTP_Overtime_RuleSet</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@355ccfb1(5); $FLSA=0(2); $elapsed=3(5); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@18f63055(5); $FLSA=0(2); $elapsed=3(5); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ObjectLogEvent>
   <type>1</type>
   <factId>5</factId>
-  <objectToString>com.jboss.example.TimeSlice@355ccfb1</objectToString>
+  <objectToString>com.jboss.example.TimeSlice@18f63055</objectToString>
 </org.drools.audit.event.ObjectLogEvent>
 <org.drools.audit.event.ObjectLogEvent>
   <type>1</type>
   <factId>6</factId>
-  <objectToString>com.jboss.example.BusinessDay@78688954</objectToString>
+  <objectToString>com.jboss.example.BusinessDay@1c33c658</objectToString>
 </org.drools.audit.event.ObjectLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>4</type>
   <activationId>CBU072_Accumulation_QualifierRule [7]</activationId>
   <rule>CBU072_Accumulation_QualifierRule</rule>
-  <declarations>$slice=com.jboss.example.TimeSlice@1710278e(7)</declarations>
+  <declarations>$slice=com.jboss.example.TimeSlice@b22c9df(7)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>4</type>
   <activationId>CBU072_InsideSchedule_worked_Accumulation_Rule [7, 2, 1]</activationId>
   <rule>CBU072_InsideSchedule_worked_Accumulation_Rule</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@1710278e(7); $FLSA=0(2); $elapsed=5(7); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@b22c9df(7); $FLSA=0(2); $elapsed=5(7); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>4</type>
   <activationId>CBU072_JTP_Overtime_RuleSet [2, 7, 1]</activationId>
   <rule>CBU072_JTP_Overtime_RuleSet</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@1710278e(7); $FLSA=0(2); $elapsed=5(7); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@b22c9df(7); $FLSA=0(2); $elapsed=5(7); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ObjectLogEvent>
   <type>1</type>
   <factId>7</factId>
-  <objectToString>com.jboss.example.TimeSlice@1710278e</objectToString>
+  <objectToString>com.jboss.example.TimeSlice@b22c9df</objectToString>
 </org.drools.audit.event.ObjectLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>4</type>
   <activationId>CBU072_Overtime_QualifierRule [8]</activationId>
   <rule>CBU072_Overtime_QualifierRule</rule>
-  <declarations>$slice=com.jboss.example.TimeSlice@2594e776(8)</declarations>
+  <declarations>$slice=com.jboss.example.TimeSlice@18f3552f(8)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>4</type>
   <activationId>CBU072_InsideSchedule_worked_Accumulation_Rule [8, 2, 1]</activationId>
   <rule>CBU072_InsideSchedule_worked_Accumulation_Rule</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@2594e776(8); $FLSA=0(2); $elapsed=5(8); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@18f3552f(8); $FLSA=0(2); $elapsed=5(8); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>4</type>
   <activationId>CBU072_JTP_Overtime_RuleSet [2, 8, 1]</activationId>
   <rule>CBU072_JTP_Overtime_RuleSet</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@2594e776(8); $FLSA=0(2); $elapsed=5(8); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@18f3552f(8); $FLSA=0(2); $elapsed=5(8); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ObjectLogEvent>
   <type>1</type>
   <factId>8</factId>
-  <objectToString>com.jboss.example.TimeSlice@2594e776</objectToString>
+  <objectToString>com.jboss.example.TimeSlice@18f3552f</objectToString>
 </org.drools.audit.event.ObjectLogEvent>
 <org.drools.audit.event.ObjectLogEvent>
   <type>1</type>
   <factId>9</factId>
-  <objectToString>com.jboss.example.BusinessDay@52e80740</objectToString>
+  <objectToString>com.jboss.example.BusinessDay@f5d8d75</objectToString>
 </org.drools.audit.event.ObjectLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>4</type>
   <activationId>CBU072_Accumulation_QualifierRule [10]</activationId>
   <rule>CBU072_Accumulation_QualifierRule</rule>
-  <declarations>$slice=com.jboss.example.TimeSlice@7f342545(10)</declarations>
+  <declarations>$slice=com.jboss.example.TimeSlice@46f20434(10)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>4</type>
   <activationId>CBU072_InsideSchedule_worked_Accumulation_Rule [10, 2, 1]</activationId>
   <rule>CBU072_InsideSchedule_worked_Accumulation_Rule</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@7f342545(10); $FLSA=0(2); $elapsed=5(10); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@46f20434(10); $FLSA=0(2); $elapsed=5(10); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>4</type>
   <activationId>CBU072_JTP_Overtime_RuleSet [2, 10, 1]</activationId>
   <rule>CBU072_JTP_Overtime_RuleSet</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@7f342545(10); $FLSA=0(2); $elapsed=5(10); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@46f20434(10); $FLSA=0(2); $elapsed=5(10); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ObjectLogEvent>
   <type>1</type>
   <factId>10</factId>
-  <objectToString>com.jboss.example.TimeSlice@7f342545</objectToString>
+  <objectToString>com.jboss.example.TimeSlice@46f20434</objectToString>
 </org.drools.audit.event.ObjectLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>4</type>
   <activationId>CBU072_Accumulation_QualifierRule [11]</activationId>
   <rule>CBU072_Accumulation_QualifierRule</rule>
-  <declarations>$slice=com.jboss.example.TimeSlice@387b1641(11)</declarations>
+  <declarations>$slice=com.jboss.example.TimeSlice@3af2164f(11)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>4</type>
   <activationId>CBU072_InsideSchedule_worked_Accumulation_Rule [11, 2, 1]</activationId>
   <rule>CBU072_InsideSchedule_worked_Accumulation_Rule</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@387b1641(11); $FLSA=0(2); $elapsed=3(11); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@3af2164f(11); $FLSA=0(2); $elapsed=3(11); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>4</type>
   <activationId>CBU072_JTP_Overtime_RuleSet [2, 11, 1]</activationId>
   <rule>CBU072_JTP_Overtime_RuleSet</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@387b1641(11); $FLSA=0(2); $elapsed=3(11); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@3af2164f(11); $FLSA=0(2); $elapsed=3(11); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ObjectLogEvent>
   <type>1</type>
   <factId>11</factId>
-  <objectToString>com.jboss.example.TimeSlice@387b1641</objectToString>
+  <objectToString>com.jboss.example.TimeSlice@3af2164f</objectToString>
 </org.drools.audit.event.ObjectLogEvent>
 <org.drools.audit.event.ObjectLogEvent>
   <type>1</type>
   <factId>12</factId>
-  <objectToString>com.jboss.example.BusinessDay@18f2225f</objectToString>
+  <objectToString>com.jboss.example.BusinessDay@6b96bac4</objectToString>
 </org.drools.audit.event.ObjectLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>4</type>
   <activationId>CBU072_Accumulation_QualifierRule [13]</activationId>
   <rule>CBU072_Accumulation_QualifierRule</rule>
-  <declarations>$slice=com.jboss.example.TimeSlice@40ae97c4(13)</declarations>
+  <declarations>$slice=com.jboss.example.TimeSlice@74bfd10a(13)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>4</type>
   <activationId>CBU072_InsideSchedule_worked_Accumulation_Rule [13, 2, 1]</activationId>
   <rule>CBU072_InsideSchedule_worked_Accumulation_Rule</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@40ae97c4(13); $FLSA=0(2); $elapsed=5(13); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@74bfd10a(13); $FLSA=0(2); $elapsed=5(13); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>4</type>
   <activationId>CBU072_JTP_Overtime_RuleSet [2, 13, 1]</activationId>
   <rule>CBU072_JTP_Overtime_RuleSet</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@40ae97c4(13); $FLSA=0(2); $elapsed=5(13); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@74bfd10a(13); $FLSA=0(2); $elapsed=5(13); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ObjectLogEvent>
   <type>1</type>
   <factId>13</factId>
-  <objectToString>com.jboss.example.TimeSlice@40ae97c4</objectToString>
+  <objectToString>com.jboss.example.TimeSlice@74bfd10a</objectToString>
 </org.drools.audit.event.ObjectLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>4</type>
   <activationId>CBU072_Accumulation_QualifierRule [14]</activationId>
   <rule>CBU072_Accumulation_QualifierRule</rule>
-  <declarations>$slice=com.jboss.example.TimeSlice@66de609(14)</declarations>
+  <declarations>$slice=com.jboss.example.TimeSlice@5d352367(14)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>4</type>
   <activationId>CBU072_InsideSchedule_worked_Accumulation_Rule [14, 2, 1]</activationId>
   <rule>CBU072_InsideSchedule_worked_Accumulation_Rule</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@66de609(14); $FLSA=0(2); $elapsed=3(14); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@5d352367(14); $FLSA=0(2); $elapsed=3(14); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>4</type>
   <activationId>CBU072_JTP_Overtime_RuleSet [2, 14, 1]</activationId>
   <rule>CBU072_JTP_Overtime_RuleSet</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@66de609(14); $FLSA=0(2); $elapsed=3(14); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@5d352367(14); $FLSA=0(2); $elapsed=3(14); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ObjectLogEvent>
   <type>1</type>
   <factId>14</factId>
-  <objectToString>com.jboss.example.TimeSlice@66de609</objectToString>
+  <objectToString>com.jboss.example.TimeSlice@5d352367</objectToString>
 </org.drools.audit.event.ObjectLogEvent>
 <org.drools.audit.event.ObjectLogEvent>
   <type>1</type>
   <factId>15</factId>
-  <objectToString>com.jboss.example.BusinessDay@19195c2b</objectToString>
+  <objectToString>com.jboss.example.BusinessDay@4ba76eff</objectToString>
 </org.drools.audit.event.ObjectLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>4</type>
   <activationId>CBU072_Accumulation_QualifierRule [16]</activationId>
   <rule>CBU072_Accumulation_QualifierRule</rule>
-  <declarations>$slice=com.jboss.example.TimeSlice@4ff217ec(16)</declarations>
+  <declarations>$slice=com.jboss.example.TimeSlice@5d684e26(16)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>4</type>
   <activationId>CBU072_InsideSchedule_worked_Accumulation_Rule [16, 2, 1]</activationId>
   <rule>CBU072_InsideSchedule_worked_Accumulation_Rule</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@4ff217ec(16); $FLSA=0(2); $elapsed=5(16); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@5d684e26(16); $FLSA=0(2); $elapsed=5(16); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>4</type>
   <activationId>CBU072_JTP_Overtime_RuleSet [2, 16, 1]</activationId>
   <rule>CBU072_JTP_Overtime_RuleSet</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@4ff217ec(16); $FLSA=0(2); $elapsed=5(16); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@5d684e26(16); $FLSA=0(2); $elapsed=5(16); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ObjectLogEvent>
   <type>1</type>
   <factId>16</factId>
-  <objectToString>com.jboss.example.TimeSlice@4ff217ec</objectToString>
+  <objectToString>com.jboss.example.TimeSlice@5d684e26</objectToString>
 </org.drools.audit.event.ObjectLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>4</type>
   <activationId>CBU072_Accumulation_QualifierRule [17]</activationId>
   <rule>CBU072_Accumulation_QualifierRule</rule>
-  <declarations>$slice=com.jboss.example.TimeSlice@1f00aff5(17)</declarations>
+  <declarations>$slice=com.jboss.example.TimeSlice@6ae2d0b2(17)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>4</type>
   <activationId>CBU072_InsideSchedule_worked_Accumulation_Rule [17, 2, 1]</activationId>
   <rule>CBU072_InsideSchedule_worked_Accumulation_Rule</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@1f00aff5(17); $FLSA=0(2); $elapsed=3(17); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@6ae2d0b2(17); $FLSA=0(2); $elapsed=3(17); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>4</type>
   <activationId>CBU072_JTP_Overtime_RuleSet [2, 17, 1]</activationId>
   <rule>CBU072_JTP_Overtime_RuleSet</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@1f00aff5(17); $FLSA=0(2); $elapsed=3(17); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@6ae2d0b2(17); $FLSA=0(2); $elapsed=3(17); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ObjectLogEvent>
   <type>1</type>
   <factId>17</factId>
-  <objectToString>com.jboss.example.TimeSlice@1f00aff5</objectToString>
+  <objectToString>com.jboss.example.TimeSlice@6ae2d0b2</objectToString>
 </org.drools.audit.event.ObjectLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>6</type>
   <activationId>CBU072_Accumulation_QualifierRule [17]</activationId>
   <rule>CBU072_Accumulation_QualifierRule</rule>
-  <declarations>$slice=com.jboss.example.TimeSlice@1f00aff5(17)</declarations>
+  <declarations>$slice=com.jboss.example.TimeSlice@6ae2d0b2(17)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>7</type>
   <activationId>CBU072_Accumulation_QualifierRule [17]</activationId>
   <rule>CBU072_Accumulation_QualifierRule</rule>
-  <declarations>$slice=com.jboss.example.TimeSlice@1f00aff5(17)</declarations>
+  <declarations>$slice=com.jboss.example.TimeSlice@6ae2d0b2(17)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>6</type>
   <activationId>CBU072_InsideSchedule_worked_Accumulation_Rule [17, 2, 1]</activationId>
   <rule>CBU072_InsideSchedule_worked_Accumulation_Rule</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@1f00aff5(17); $FLSA=0(2); $elapsed=3(17); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@6ae2d0b2(17); $FLSA=0(2); $elapsed=3(17); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>7</type>
   <activationId>CBU072_InsideSchedule_worked_Accumulation_Rule [17, 2, 1]</activationId>
   <rule>CBU072_InsideSchedule_worked_Accumulation_Rule</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@1f00aff5(17); $FLSA=0(2); $elapsed=3(17); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@6ae2d0b2(17); $FLSA=0(2); $elapsed=3(17); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>6</type>
   <activationId>CBU072_InsideSchedule_worked_Accumulation_Rule [16, 2, 1]</activationId>
   <rule>CBU072_InsideSchedule_worked_Accumulation_Rule</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@4ff217ec(16); $FLSA=0(2); $elapsed=5(16); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@5d684e26(16); $FLSA=0(2); $elapsed=5(16); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>7</type>
   <activationId>CBU072_InsideSchedule_worked_Accumulation_Rule [16, 2, 1]</activationId>
   <rule>CBU072_InsideSchedule_worked_Accumulation_Rule</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@4ff217ec(16); $FLSA=0(2); $elapsed=5(16); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@5d684e26(16); $FLSA=0(2); $elapsed=5(16); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>6</type>
   <activationId>CBU072_InsideSchedule_worked_Accumulation_Rule [14, 2, 1]</activationId>
   <rule>CBU072_InsideSchedule_worked_Accumulation_Rule</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@66de609(14); $FLSA=0(2); $elapsed=3(14); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@5d352367(14); $FLSA=0(2); $elapsed=3(14); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>7</type>
   <activationId>CBU072_InsideSchedule_worked_Accumulation_Rule [14, 2, 1]</activationId>
   <rule>CBU072_InsideSchedule_worked_Accumulation_Rule</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@66de609(14); $FLSA=0(2); $elapsed=3(14); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@5d352367(14); $FLSA=0(2); $elapsed=3(14); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>6</type>
   <activationId>CBU072_InsideSchedule_worked_Accumulation_Rule [13, 2, 1]</activationId>
   <rule>CBU072_InsideSchedule_worked_Accumulation_Rule</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@40ae97c4(13); $FLSA=0(2); $elapsed=5(13); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@74bfd10a(13); $FLSA=0(2); $elapsed=5(13); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>7</type>
   <activationId>CBU072_InsideSchedule_worked_Accumulation_Rule [13, 2, 1]</activationId>
   <rule>CBU072_InsideSchedule_worked_Accumulation_Rule</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@40ae97c4(13); $FLSA=0(2); $elapsed=5(13); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@74bfd10a(13); $FLSA=0(2); $elapsed=5(13); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>6</type>
   <activationId>CBU072_InsideSchedule_worked_Accumulation_Rule [11, 2, 1]</activationId>
   <rule>CBU072_InsideSchedule_worked_Accumulation_Rule</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@387b1641(11); $FLSA=0(2); $elapsed=3(11); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@3af2164f(11); $FLSA=0(2); $elapsed=3(11); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>7</type>
   <activationId>CBU072_InsideSchedule_worked_Accumulation_Rule [11, 2, 1]</activationId>
   <rule>CBU072_InsideSchedule_worked_Accumulation_Rule</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@387b1641(11); $FLSA=0(2); $elapsed=3(11); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@3af2164f(11); $FLSA=0(2); $elapsed=3(11); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>6</type>
   <activationId>CBU072_InsideSchedule_worked_Accumulation_Rule [10, 2, 1]</activationId>
   <rule>CBU072_InsideSchedule_worked_Accumulation_Rule</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@7f342545(10); $FLSA=0(2); $elapsed=5(10); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@46f20434(10); $FLSA=0(2); $elapsed=5(10); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>7</type>
   <activationId>CBU072_InsideSchedule_worked_Accumulation_Rule [10, 2, 1]</activationId>
   <rule>CBU072_InsideSchedule_worked_Accumulation_Rule</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@7f342545(10); $FLSA=0(2); $elapsed=5(10); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@46f20434(10); $FLSA=0(2); $elapsed=5(10); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>6</type>
   <activationId>CBU072_InsideSchedule_worked_Accumulation_Rule [8, 2, 1]</activationId>
   <rule>CBU072_InsideSchedule_worked_Accumulation_Rule</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@2594e776(8); $FLSA=0(2); $elapsed=5(8); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@18f3552f(8); $FLSA=0(2); $elapsed=5(8); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>7</type>
   <activationId>CBU072_InsideSchedule_worked_Accumulation_Rule [8, 2, 1]</activationId>
   <rule>CBU072_InsideSchedule_worked_Accumulation_Rule</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@2594e776(8); $FLSA=0(2); $elapsed=5(8); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@18f3552f(8); $FLSA=0(2); $elapsed=5(8); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>6</type>
   <activationId>CBU072_InsideSchedule_worked_Accumulation_Rule [7, 2, 1]</activationId>
   <rule>CBU072_InsideSchedule_worked_Accumulation_Rule</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@1710278e(7); $FLSA=0(2); $elapsed=5(7); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@b22c9df(7); $FLSA=0(2); $elapsed=5(7); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>7</type>
   <activationId>CBU072_InsideSchedule_worked_Accumulation_Rule [7, 2, 1]</activationId>
   <rule>CBU072_InsideSchedule_worked_Accumulation_Rule</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@1710278e(7); $FLSA=0(2); $elapsed=5(7); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@b22c9df(7); $FLSA=0(2); $elapsed=5(7); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>6</type>
   <activationId>CBU072_InsideSchedule_worked_Accumulation_Rule [4, 2, 1]</activationId>
   <rule>CBU072_InsideSchedule_worked_Accumulation_Rule</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@74893969(4); $FLSA=0(2); $elapsed=5(4); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@48baa31b(4); $FLSA=0(2); $elapsed=5(4); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>7</type>
   <activationId>CBU072_InsideSchedule_worked_Accumulation_Rule [4, 2, 1]</activationId>
   <rule>CBU072_InsideSchedule_worked_Accumulation_Rule</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@74893969(4); $FLSA=0(2); $elapsed=5(4); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@48baa31b(4); $FLSA=0(2); $elapsed=5(4); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>6</type>
   <activationId>CBU072_Accumulation_QualifierRule [16]</activationId>
   <rule>CBU072_Accumulation_QualifierRule</rule>
-  <declarations>$slice=com.jboss.example.TimeSlice@4ff217ec(16)</declarations>
+  <declarations>$slice=com.jboss.example.TimeSlice@5d684e26(16)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>7</type>
   <activationId>CBU072_Accumulation_QualifierRule [16]</activationId>
   <rule>CBU072_Accumulation_QualifierRule</rule>
-  <declarations>$slice=com.jboss.example.TimeSlice@4ff217ec(16)</declarations>
+  <declarations>$slice=com.jboss.example.TimeSlice@5d684e26(16)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>6</type>
   <activationId>CBU072_Accumulation_QualifierRule [14]</activationId>
   <rule>CBU072_Accumulation_QualifierRule</rule>
-  <declarations>$slice=com.jboss.example.TimeSlice@66de609(14)</declarations>
+  <declarations>$slice=com.jboss.example.TimeSlice@5d352367(14)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>7</type>
   <activationId>CBU072_Accumulation_QualifierRule [14]</activationId>
   <rule>CBU072_Accumulation_QualifierRule</rule>
-  <declarations>$slice=com.jboss.example.TimeSlice@66de609(14)</declarations>
+  <declarations>$slice=com.jboss.example.TimeSlice@5d352367(14)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>6</type>
   <activationId>CBU072_Accumulation_QualifierRule [13]</activationId>
   <rule>CBU072_Accumulation_QualifierRule</rule>
-  <declarations>$slice=com.jboss.example.TimeSlice@40ae97c4(13)</declarations>
+  <declarations>$slice=com.jboss.example.TimeSlice@74bfd10a(13)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>7</type>
   <activationId>CBU072_Accumulation_QualifierRule [13]</activationId>
   <rule>CBU072_Accumulation_QualifierRule</rule>
-  <declarations>$slice=com.jboss.example.TimeSlice@40ae97c4(13)</declarations>
+  <declarations>$slice=com.jboss.example.TimeSlice@74bfd10a(13)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>6</type>
   <activationId>CBU072_Accumulation_QualifierRule [11]</activationId>
   <rule>CBU072_Accumulation_QualifierRule</rule>
-  <declarations>$slice=com.jboss.example.TimeSlice@387b1641(11)</declarations>
+  <declarations>$slice=com.jboss.example.TimeSlice@3af2164f(11)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>7</type>
   <activationId>CBU072_Accumulation_QualifierRule [11]</activationId>
   <rule>CBU072_Accumulation_QualifierRule</rule>
-  <declarations>$slice=com.jboss.example.TimeSlice@387b1641(11)</declarations>
+  <declarations>$slice=com.jboss.example.TimeSlice@3af2164f(11)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>6</type>
   <activationId>CBU072_Accumulation_QualifierRule [10]</activationId>
   <rule>CBU072_Accumulation_QualifierRule</rule>
-  <declarations>$slice=com.jboss.example.TimeSlice@7f342545(10)</declarations>
+  <declarations>$slice=com.jboss.example.TimeSlice@46f20434(10)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>7</type>
   <activationId>CBU072_Accumulation_QualifierRule [10]</activationId>
   <rule>CBU072_Accumulation_QualifierRule</rule>
-  <declarations>$slice=com.jboss.example.TimeSlice@7f342545(10)</declarations>
+  <declarations>$slice=com.jboss.example.TimeSlice@46f20434(10)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>6</type>
   <activationId>CBU072_Overtime_QualifierRule [8]</activationId>
   <rule>CBU072_Overtime_QualifierRule</rule>
-  <declarations>$slice=com.jboss.example.TimeSlice@2594e776(8)</declarations>
+  <declarations>$slice=com.jboss.example.TimeSlice@18f3552f(8)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>7</type>
   <activationId>CBU072_Overtime_QualifierRule [8]</activationId>
   <rule>CBU072_Overtime_QualifierRule</rule>
-  <declarations>$slice=com.jboss.example.TimeSlice@2594e776(8)</declarations>
+  <declarations>$slice=com.jboss.example.TimeSlice@18f3552f(8)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>6</type>
   <activationId>CBU072_JTP_Overtime_RuleSet [2, 17, 1]</activationId>
   <rule>CBU072_JTP_Overtime_RuleSet</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@1f00aff5(17); $FLSA=0(2); $elapsed=3(17); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@6ae2d0b2(17); $FLSA=0(2); $elapsed=3(17); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>7</type>
   <activationId>CBU072_JTP_Overtime_RuleSet [2, 17, 1]</activationId>
   <rule>CBU072_JTP_Overtime_RuleSet</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@1f00aff5(17); $FLSA=0(2); $elapsed=3(17); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@6ae2d0b2(17); $FLSA=0(2); $elapsed=3(17); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>6</type>
   <activationId>CBU072_JTP_Overtime_RuleSet [2, 16, 1]</activationId>
   <rule>CBU072_JTP_Overtime_RuleSet</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@4ff217ec(16); $FLSA=0(2); $elapsed=5(16); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@5d684e26(16); $FLSA=0(2); $elapsed=5(16); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>7</type>
   <activationId>CBU072_JTP_Overtime_RuleSet [2, 16, 1]</activationId>
   <rule>CBU072_JTP_Overtime_RuleSet</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@4ff217ec(16); $FLSA=0(2); $elapsed=5(16); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@5d684e26(16); $FLSA=0(2); $elapsed=5(16); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>6</type>
   <activationId>CBU072_JTP_Overtime_RuleSet [2, 14, 1]</activationId>
   <rule>CBU072_JTP_Overtime_RuleSet</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@66de609(14); $FLSA=0(2); $elapsed=3(14); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@5d352367(14); $FLSA=0(2); $elapsed=3(14); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>7</type>
   <activationId>CBU072_JTP_Overtime_RuleSet [2, 14, 1]</activationId>
   <rule>CBU072_JTP_Overtime_RuleSet</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@66de609(14); $FLSA=0(2); $elapsed=3(14); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@5d352367(14); $FLSA=0(2); $elapsed=3(14); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>6</type>
   <activationId>CBU072_JTP_Overtime_RuleSet [2, 13, 1]</activationId>
   <rule>CBU072_JTP_Overtime_RuleSet</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@40ae97c4(13); $FLSA=0(2); $elapsed=5(13); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@74bfd10a(13); $FLSA=0(2); $elapsed=5(13); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>7</type>
   <activationId>CBU072_JTP_Overtime_RuleSet [2, 13, 1]</activationId>
   <rule>CBU072_JTP_Overtime_RuleSet</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@40ae97c4(13); $FLSA=0(2); $elapsed=5(13); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@74bfd10a(13); $FLSA=0(2); $elapsed=5(13); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>6</type>
   <activationId>CBU072_JTP_Overtime_RuleSet [2, 11, 1]</activationId>
   <rule>CBU072_JTP_Overtime_RuleSet</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@387b1641(11); $FLSA=0(2); $elapsed=3(11); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@3af2164f(11); $FLSA=0(2); $elapsed=3(11); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>7</type>
   <activationId>CBU072_JTP_Overtime_RuleSet [2, 11, 1]</activationId>
   <rule>CBU072_JTP_Overtime_RuleSet</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@387b1641(11); $FLSA=0(2); $elapsed=3(11); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@3af2164f(11); $FLSA=0(2); $elapsed=3(11); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>6</type>
   <activationId>CBU072_JTP_Overtime_RuleSet [2, 10, 1]</activationId>
   <rule>CBU072_JTP_Overtime_RuleSet</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@7f342545(10); $FLSA=0(2); $elapsed=5(10); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@46f20434(10); $FLSA=0(2); $elapsed=5(10); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>7</type>
   <activationId>CBU072_JTP_Overtime_RuleSet [2, 10, 1]</activationId>
   <rule>CBU072_JTP_Overtime_RuleSet</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@7f342545(10); $FLSA=0(2); $elapsed=5(10); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@46f20434(10); $FLSA=0(2); $elapsed=5(10); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>6</type>
   <activationId>CBU072_JTP_Overtime_RuleSet [2, 8, 1]</activationId>
   <rule>CBU072_JTP_Overtime_RuleSet</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@2594e776(8); $FLSA=0(2); $elapsed=5(8); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@18f3552f(8); $FLSA=0(2); $elapsed=5(8); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>7</type>
   <activationId>CBU072_JTP_Overtime_RuleSet [2, 8, 1]</activationId>
   <rule>CBU072_JTP_Overtime_RuleSet</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@2594e776(8); $FLSA=0(2); $elapsed=5(8); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@18f3552f(8); $FLSA=0(2); $elapsed=5(8); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>6</type>
   <activationId>CBU072_JTP_Overtime_RuleSet [2, 7, 1]</activationId>
   <rule>CBU072_JTP_Overtime_RuleSet</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@1710278e(7); $FLSA=0(2); $elapsed=5(7); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@b22c9df(7); $FLSA=0(2); $elapsed=5(7); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>7</type>
   <activationId>CBU072_JTP_Overtime_RuleSet [2, 7, 1]</activationId>
   <rule>CBU072_JTP_Overtime_RuleSet</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@1710278e(7); $FLSA=0(2); $elapsed=5(7); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@b22c9df(7); $FLSA=0(2); $elapsed=5(7); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>6</type>
   <activationId>CBU072_JTP_Overtime_RuleSet [2, 5, 1]</activationId>
   <rule>CBU072_JTP_Overtime_RuleSet</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@355ccfb1(5); $FLSA=0(2); $elapsed=3(5); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@18f63055(5); $FLSA=0(2); $elapsed=3(5); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>7</type>
   <activationId>CBU072_JTP_Overtime_RuleSet [2, 5, 1]</activationId>
   <rule>CBU072_JTP_Overtime_RuleSet</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@355ccfb1(5); $FLSA=0(2); $elapsed=3(5); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@18f63055(5); $FLSA=0(2); $elapsed=3(5); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>6</type>
   <activationId>CBU072_JTP_Overtime_RuleSet [2, 4, 1]</activationId>
   <rule>CBU072_JTP_Overtime_RuleSet</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@74893969(4); $FLSA=0(2); $elapsed=5(4); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@48baa31b(4); $FLSA=0(2); $elapsed=5(4); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>7</type>
   <activationId>CBU072_JTP_Overtime_RuleSet [2, 4, 1]</activationId>
   <rule>CBU072_JTP_Overtime_RuleSet</rule>
-  <declarations>$employee=com.jboss.example.Employee@2d35da43(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@74893969(4); $FLSA=0(2); $elapsed=5(4); $schedule=com.jboss.example.WeeklyAccumulator@12c9b196(1)</declarations>
+  <declarations>$employee=com.jboss.example.Employee@2200c550(1); $OT=0(2); $slice=com.jboss.example.TimeSlice@48baa31b(4); $FLSA=0(2); $elapsed=5(4); $schedule=com.jboss.example.WeeklyAccumulator@7458e2a1(1)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>6</type>
   <activationId>CBU072_Accumulation_QualifierRule [7]</activationId>
   <rule>CBU072_Accumulation_QualifierRule</rule>
-  <declarations>$slice=com.jboss.example.TimeSlice@1710278e(7)</declarations>
+  <declarations>$slice=com.jboss.example.TimeSlice@b22c9df(7)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>7</type>
   <activationId>CBU072_Accumulation_QualifierRule [7]</activationId>
   <rule>CBU072_Accumulation_QualifierRule</rule>
-  <declarations>$slice=com.jboss.example.TimeSlice@1710278e(7)</declarations>
+  <declarations>$slice=com.jboss.example.TimeSlice@b22c9df(7)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>6</type>
   <activationId>CBU072_Accumulation_QualifierRule [5]</activationId>
   <rule>CBU072_Accumulation_QualifierRule</rule>
-  <declarations>$slice=com.jboss.example.TimeSlice@355ccfb1(5)</declarations>
+  <declarations>$slice=com.jboss.example.TimeSlice@18f63055(5)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>7</type>
   <activationId>CBU072_Accumulation_QualifierRule [5]</activationId>
   <rule>CBU072_Accumulation_QualifierRule</rule>
-  <declarations>$slice=com.jboss.example.TimeSlice@355ccfb1(5)</declarations>
+  <declarations>$slice=com.jboss.example.TimeSlice@18f63055(5)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>6</type>
   <activationId>CBU072_Accumulation_QualifierRule [4]</activationId>
   <rule>CBU072_Accumulation_QualifierRule</rule>
-  <declarations>$slice=com.jboss.example.TimeSlice@74893969(4)</declarations>
+  <declarations>$slice=com.jboss.example.TimeSlice@48baa31b(4)</declarations>
 </org.drools.audit.event.ActivationLogEvent>
 <org.drools.audit.event.ActivationLogEvent>
   <type>7</type>
   <activationId>CBU072_Accumulation_QualifierRule [4]</activationId>
   <rule>CBU072_Accumulation_QualifierRule</rule>
-  <declarations>$slice=com.jboss.example.TimeSlice@74893969(4)</declarations>
+  <declarations>$slice=com.jboss.example.TimeSlice@48baa31b(4)</declarations>
 </org.drools.audit.event.ActivationLogEvent>

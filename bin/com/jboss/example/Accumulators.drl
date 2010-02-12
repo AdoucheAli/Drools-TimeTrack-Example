@@ -75,7 +75,7 @@ agenda-group "Accumulators"
 		$slice:  TimeSlice( 
 					classifiers contains(TimeSliceClassifiers.ABSENCE), 
 					classifiers contains(TimeSliceClassifiers.COUNT_TO_OT),
-					classifiers containt(TimeSliceClassifiers.COUNT_TO_FLSA),
+					classifiers contains(TimeSliceClassifiers.COUNT_TO_FLSA),
 					employee == $employee,
 					$elapsed: elapsed
 					)
@@ -104,7 +104,7 @@ rule "CBU072_InsideSchedule_Absence_Accumulation_Rule"
 		$slice:  TimeSlice( 
 					classifiers contains(TimeSliceClassifiers.ABSENCE), 
 					classifiers contains(TimeSliceClassifiers.COUNT_TO_OT),
-					classifiers not contains (TimeSliceClassifiers.COUNT_TO_FLSA),
+					classifiers not contains TimeSliceClassifiers.COUNT_TO_FLSA,
 					employee == $employee,
 					$elapsed: elapsed
 					)
