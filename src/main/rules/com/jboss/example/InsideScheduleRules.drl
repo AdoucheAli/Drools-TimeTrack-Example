@@ -1,0 +1,117 @@
+package com.jboss.example
+
+
+rule "CBU072_Accumulation_QualifierRule"
+	salience 10000
+	when
+		$slice : TimeSlice(
+				sliceCreatedByRules  == false, 
+				classifiers contains(TimeSliceClassifiers.INSIDE_SCHEDULE)
+				)	
+	then
+		System.out.println("InsideSchedule Compensation");	
+		drools.getWorkingMemory().setFocus("InsideSchedule");
+end
+
+
+rule "CBU072_InsideSchedule_worked_Accumulation_Rule"
+	agenda-group "InsideSchedule"
+	when
+		$employee: Employee( $schedule:schedule  )
+
+		WeeklyAccumulator( 
+			this == $schedule, 
+			$OT: weeklyHoursTowardsOT, 
+			$FLSA: weeklyHoursTowardsFLSA
+			)
+
+		$slice: TimeSlice( 
+				classifiers contains(TimeSliceClassifiers.WORKED ) ,
+				$elapsed: elapsed,
+				employee == $employee
+				)
+		
+	then
+		System.out.println("Worked: Count towards OT and FLSA");
+
+		#Add the duration of the time slice to the weekly overtime threshold,
+		$OT += $elapsed;
+			
+		#Add the duration of the time slice to the weekly FLSA threshold.		
+		$FLSA +=  $elapsed;			
+		
+end
+
+
+rule "CBU072_InsideSchedule_ExcusedAbsence_Accumulation_Rule"
+	agenda-group "InsideSchedule"	
+	when		
+	
+		$employee: Employee( $schedule:schedule )
+
+		WeeklyAccumulator( 
+			this == $schedule, 
+			$OT: weeklyHoursTowardsOT , 
+			$FLSA: weeklyHoursTowardsFLSA 
+			)
+
+		$slice:  TimeSlice( 
+					classifiers contains(TimeSliceClassifiers.ABSENCE), 
+					classifiers contains(TimeSliceClassifiers.OT),
+					classifiers contains(TimeSliceClassifiers.COUNT_TO_FLSA),
+					employee == $employee,
+					$elapsed: elapsed
+					)
+		
+	then				
+		System.out.println("Absence: Count towards FLSA and OT");
+				
+		#Add the duration of the time slice to the weekly overtime threshold,
+		$OT += $elapsed;
+			
+		#Add the duration of the time slice to the weekly FLSA threshold.		
+		$FLSA +=  $elapsed;
+		
+end
+
+
+rule "CBU072_InsideSchedule_Absence_Accumulation_Rule"
+	agenda-group "InsideSchedule"
+	when
+		$employee : Employee( $schedule:schedule )
+		
+		WeeklyAccumulator( 
+			this == $schedule, 
+			$OT: weeklyHoursTowardsOT, 
+			$FLSA: weeklyHoursTowardsFLSA 
+			)
+			
+		$slice : TimeSlice( 
+				classifiers contains(TimeSliceClassifiers.ABSENCE), 
+				classifiers contains(TimeSliceClassifiers.OT),
+				classifiers contains (TimeSliceClassifiers.COUNT_TO_FLSA),
+				employee == $employee, 
+				$elapsed: elapsed
+			)
+		
+	then
+		System.out.println("Absence: Count to FLSA but not OT");
+
+		#Add the duration of the time slice to the weekly overtime threshold,
+		$OT += $elapsed;
+end
+
+rule "Absence_Accumulation_Rule"
+
+ when
+   $slice : TimeSlice( 
+     classifiers contains(TimeSliceClassifiers.ABSENCE), 
+     classifiers contains(TimeSliceClassifiers.OT),
+     classifiers not contains (TimeSliceClassifiers.COUNT_TO_FLSA)
+  then
+     System.out.println("Absence: Count to overtime but not FLSA");
+end
+
+
+
+
