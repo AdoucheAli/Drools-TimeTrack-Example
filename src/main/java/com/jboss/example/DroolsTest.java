@@ -49,7 +49,7 @@ public class DroolsTest {
 		KnowledgeBuilder kbuilder = KnowledgeBuilderFactory.newKnowledgeBuilder();
 		kbuilder.add(ResourceFactory.newClassPathResource("com/jboss/example/InsideScheduleRules.drl"), ResourceType.DRL);
 		kbuilder.add(ResourceFactory.newClassPathResource("com/jboss/example/OutsideScheduleRules.drl"), ResourceType.DRL);
-		kbuilder.add(ResourceFactory.newClassPathResource("com/jboss/example/Accumulators.drl"),ResourceType.DRL);
+//		kbuilder.add(ResourceFactory.newClassPathResource("com/jboss/example/Accumulators.drl"),ResourceType.DRL);
 		KnowledgeBuilderErrors errors = kbuilder.getErrors();
 		if (errors.size() > 0) {
 			for (KnowledgeBuilderError error: errors) {
@@ -87,7 +87,6 @@ public class DroolsTest {
 		timeSlice.setElapsed(5);
 		timeSlice.setEmployee(emp);
 		businessDay.addTimeSlice(timeSlice);
-		
 		timeSlice = new TimeSlice();
 		timeSlice.addClassifier(ABSENCE,APPROVED, INSIDE_SCHEDULE);
 		timeSlice.setElapsed(3);
@@ -165,7 +164,6 @@ public class DroolsTest {
 		businessDay.addTimeSlice(timeSlice);
 			
 		schedule.addDayWorked(businessDay);
-
 		
 		return emp;
 	}

@@ -10,20 +10,8 @@ public class BusinessDay {
 
     private Employee employee;
     private Date date;
-
-
-
-    public Employee getEmployee() {
-        return employee;
-    }
-
-    public void setEmployee(Employee employee) {
-        this.employee = employee;
-    }
-
     private List<TimeSlice> slices;
-
-
+    
 
     public BusinessDay(){
         slices = new ArrayList<TimeSlice>();
@@ -56,5 +44,16 @@ public class BusinessDay {
     public Date getDate(){
     	return date;
     }
+    
+
+    public Employee getEmployee() {
+        return employee;
+    }
+
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
+    }
+
+
     
 }

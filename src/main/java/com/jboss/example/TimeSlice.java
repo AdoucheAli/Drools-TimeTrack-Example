@@ -69,6 +69,10 @@ public class TimeSlice {
     public void setBusinessDay(BusinessDay businessDay) {
         this.businessDay = businessDay;
     }
+    
+    public void addClassifier(String classifier){
+    	classifiers.add(classifier);
+    }
 
     public void addClassifier(String... classifier ){
 	for (String c :  classifier){
