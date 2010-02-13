@@ -21,7 +21,7 @@ public class Employee implements Serializable
     private String titleSuffix = "";
     private char payClass = 'A';
 
-    private Set<EmployeeClassifiers> classifiers;
+    private Set<String> classifiers;
     private WeeklyAccumulator schedule;
 
 
@@ -31,7 +31,7 @@ public class Employee implements Serializable
         startDate = new GregorianCalendar(2002,11,3).getTime();
 
 
-        classifiers = new HashSet<EmployeeClassifiers>();
+        classifiers = new HashSet<String>();
 
         // Default to example data
         
@@ -134,16 +134,16 @@ public class Employee implements Serializable
         this.payClass = payClass;
     }
 
-    public Set<EmployeeClassifiers> getClassifiers() {
+    public Set<String> getClassifiers() {
         return classifiers;
     }
 
-    public void setClassifiers(Set<EmployeeClassifiers> classifiers) {
+    public void setClassifiers(Set<String> classifiers) {
         this.classifiers = classifiers;
     }
 
 
-    public void addClassifier(EmployeeClassifiers classifier){
+    public void addClassifier(String classifier){
     
     	this.classifiers.add(classifier);
     }

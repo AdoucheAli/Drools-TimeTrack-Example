@@ -1,7 +1,8 @@
 package com.jboss.example;
 
 
-public enum EmployeeClassifiers 
+public class EmployeeClassifiers
 {
-	FLSA_ELIGIBLE, POSITIVE_PAID
+	public static final String FLSA_ELIGIBLE = "FLSA_ELIGIBLE";
+	public static final String POSITIVE_PAID = "POSITIVE_PAID";
 }

@@ -1,4 +1,6 @@
 package com.jboss.example;
 
 
-public enum ScheduleClassifiers { STANDARD }
+public class ScheduleClassifiers {
+	public static final String STANDARD = "STANDARD";
+}

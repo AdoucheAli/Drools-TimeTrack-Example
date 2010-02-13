@@ -9,13 +9,13 @@ public class TimeSlice {
     private Date start;
     private Date end;
     private int elapsed;
-    private Set<TimeSliceClassifiers> classifiers;
+    private Set<String> classifiers;
     private BusinessDay businessDay;
     private boolean sliceCreatedByRules = false;
     private Employee employee;
 
     public TimeSlice(){
-       classifiers = new HashSet<TimeSliceClassifiers>();        
+       classifiers = new HashSet<String>();
     }
                                                            
 
@@ -54,11 +54,11 @@ public class TimeSlice {
     }
     
     
-    public Set<TimeSliceClassifiers> getClassifiers() {
+    public Set<String> getClassifiers() {
         return classifiers;
     }
 
-    public void setClassifiers(Set<TimeSliceClassifiers> classifiers) {
+    public void setClassifiers(Set<String> classifiers) {
         this.classifiers = classifiers;
     }
 
@@ -70,8 +70,8 @@ public class TimeSlice {
         this.businessDay = businessDay;
     }
 
-    public void addClassifier(TimeSliceClassifiers... classifier ){
-    	for (TimeSliceClassifiers c :  classifier){
+    public void addClassifier(String... classifier ){
+	for (String c :  classifier){
         	if (! classifiers.contains(classifier))
     		classifiers.add(c);
     	}

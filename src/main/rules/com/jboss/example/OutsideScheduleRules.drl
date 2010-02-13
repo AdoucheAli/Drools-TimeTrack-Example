@@ -90,7 +90,7 @@ rule "CBU072_OvertimeCashSplit_Rule"
 		
 		TimeSlice overtimeSlice = new TimeSlice();
 		overtimeSlice.setElapsed(premium);
-		for (TimeSliceClassifiers classifier: $slice.getClassifiers()){
+		for (String classifier: $slice.getClassifiers()){
 			overtimeSlice.addClassifier(classifier);		
 		}
 

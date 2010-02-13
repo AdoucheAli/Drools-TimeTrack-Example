@@ -105,9 +105,11 @@ rule "Absence_Accumulation_Rule"
 
  when
    $slice : TimeSlice( 
-     classifiers contains(TimeSliceClassifiers.ABSENCE), 
-     classifiers contains(TimeSliceClassifiers.OT),
-     classifiers not contains TimeSliceClassifiers.COUNT_TO_FLSA)
+     classifiers contains TimeSliceClassifiers.ABSENCE,
+     classifiers contains TimeSliceClassifiers.OT,
+     classifiers not contains TimeSliceClassifiers.COUNT_TO_FLSA
+     )
+
   then
      System.out.println("Absence: Count to overtime but not FLSA");
 end

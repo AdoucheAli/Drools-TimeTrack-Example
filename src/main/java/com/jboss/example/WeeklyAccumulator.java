@@ -11,13 +11,13 @@ public class WeeklyAccumulator implements Serializable
     private int weeklyHours = 40;
     private int weeklyHoursTowardsOT=0;
     private int weeklyHoursTowardsFLSA=0;
-    private Set<ScheduleClassifiers> classifiers;
+    private Set<String> classifiers;
 
 
     private List<BusinessDay> daysWorked;
 
     public WeeklyAccumulator(){
-        classifiers = new HashSet<ScheduleClassifiers>();
+        classifiers = new HashSet<String>();
         daysWorked = new ArrayList<BusinessDay>();
     }
 
@@ -38,15 +38,15 @@ public class WeeklyAccumulator implements Serializable
         this.weeklyHours = weeklyHours;
     }
 
-    public Set<ScheduleClassifiers> getClassifiers() {
+    public Set<String> getClassifiers() {
         return classifiers;
     }
 
-    public void setClassifiers(Set<ScheduleClassifiers> classifiers) {
+    public void setClassifiers(Set<String> classifiers) {
         this.classifiers = classifiers;
     }
 
-    public void addClassifier(ScheduleClassifiers classifier){
+    public void addClassifier(String classifier){
     	this.classifiers.add(classifier);
     }
     
