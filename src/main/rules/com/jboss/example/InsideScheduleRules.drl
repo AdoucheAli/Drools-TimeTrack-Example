@@ -38,9 +38,11 @@ rule "CBU072_InsideSchedule_worked_Accumulation_Rule"
 
 		#Add the duration of the time slice to the weekly overtime threshold,
 		$OT += $elapsed;
+		$schedule.setWeeklyHoursTowardsOT($OT);
 			
 		#Add the duration of the time slice to the weekly FLSA threshold.		
 		$FLSA +=  $elapsed;	
+		$schedule.setWeeklyHoursTowardsFLSA($FLSA);
 		
 		System.out.println("Accumulated totals - OT: " + $OT + ", FLSA: " + $FLSA + "\n");		
 		
@@ -60,8 +62,8 @@ rule "CBU072_InsideSchedule_ExcusedAbsence_Accumulation_Rule"
 			)
 
 		$slice:  TimeSlice( 
-					classifiers contains(TimeSliceClassifiers.ABSENCE), 
-					classifiers contains(TimeSliceClassifiers.OT),
+					classifiers contains(TimeSliceClassifiers.ABSENCE) ||
+					classifiers contains(TimeSliceClassifiers.OT) ||
 					classifiers contains(TimeSliceClassifiers.COUNT_TO_FLSA),
 					employee == $employee,
 					$elapsed: elapsed
@@ -73,9 +75,11 @@ rule "CBU072_InsideSchedule_ExcusedAbsence_Accumulation_Rule"
 				
 		#Add the duration of the time slice to the weekly overtime threshold,
 		$OT += $elapsed;
+		$schedule.setWeeklyHoursTowardsOT($OT);
 			
 		#Add the duration of the time slice to the weekly FLSA threshold.		
-		$FLSA +=  $elapsed;
+		$FLSA +=  $elapsed;	
+		$schedule.setWeeklyHoursTowardsFLSA($FLSA);
 		
 		System.out.println("Accumulated totals - OT: " + $OT + ", FLSA: " + $FLSA + "\n");		
 end
@@ -93,8 +97,8 @@ rule "CBU072_InsideSchedule_Absence_Accumulation_Rule"
 			)
 			
 		$slice : TimeSlice( 
-				classifiers contains TimeSliceClassifiers.ABSENCE, 
-				classifiers contains TimeSliceClassifiers.OT,
+				classifiers contains TimeSliceClassifiers.ABSENCE ||
+				classifiers contains TimeSliceClassifiers.OT ||
 				classifiers not contains TimeSliceClassifiers.COUNT_TO_FLSA,
 				employee == $employee, 
 				$elapsed: elapsed
@@ -106,6 +110,12 @@ rule "CBU072_InsideSchedule_Absence_Accumulation_Rule"
 
 		#Add the duration of the time slice to the weekly FLSA threshold,
 		$FLSA += $elapsed;
+		$schedule.setWeeklyHoursTowardsFLSA($FLSA);
 		
 		System.out.println("Accumulated totals - OT: " + $OT + ", FLSA: " + $FLSA + "\n");		
 end
+
+
+
+
+
