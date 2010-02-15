@@ -75,6 +75,7 @@ public class DroolsTest {
 		schedule.addClassifier(ScheduleClassifiers.STANDARD);
 		emp.setSchedule(schedule);		
 		
+		// June 26, 2006 - 5 inside working hours + 3 approved inside absence hours
 		businessDay.setDate(2006,06, 26);		
 		businessDay.setEmployee(emp);
 		
@@ -85,15 +86,14 @@ public class DroolsTest {
 		timeSlice.setStart(businessDay.getDate());
 		timeSlice.setEnd(businessDay.getDate());
 		timeSlice.setElapsed(5);
-		timeSlice.setEmployee(emp);
+//		timeSlice.setEmployee(emp);
 		businessDay.addTimeSlice(timeSlice);
 		timeSlice = new TimeSlice();
 		timeSlice.addClassifier(ABSENCE,APPROVED, INSIDE_SCHEDULE);
 		timeSlice.setElapsed(3);
 		businessDay.addTimeSlice(timeSlice);
 		
-		// June 27th
-		
+		// June 27, 2006 - 5 inside working hours + 5 outside working hours (2 OT)
 		businessDay = new BusinessDay();
 		businessDay.setDate(2006, 06, 27);
 		businessDay.setEmployee(emp);
@@ -111,8 +111,7 @@ public class DroolsTest {
 		schedule.addDayWorked(businessDay);
 
 
-		// June 28th
-		
+		// June 28, 2006 - 8 inside working hours
 		businessDay = new BusinessDay();
 		businessDay.setDate(2006, 06, 28);
 		businessDay.setEmployee(emp);
@@ -123,14 +122,15 @@ public class DroolsTest {
 		businessDay.addTimeSlice(timeSlice);
 		
 		timeSlice = new TimeSlice();
-		timeSlice.addClassifier(INSIDE_SCHEDULE, WORKED);
+//		timeSlice.addClassifier(INSIDE_SCHEDULE, WORKED);
+		timeSlice.addClassifier(ABSENCE,APPROVED, INSIDE_SCHEDULE);
 		timeSlice.setElapsed(3);
 		businessDay.addTimeSlice(timeSlice);
 			
 		schedule.addDayWorked(businessDay);
 		
 	
-		// June 29th
+		// June 29, 2006 - 8 inside working hours
 		businessDay = new BusinessDay();
 		businessDay.setDate(2006, 06, 29);
 		businessDay.setEmployee(emp);
@@ -141,14 +141,15 @@ public class DroolsTest {
 		businessDay.addTimeSlice(timeSlice);
 		
 		timeSlice = new TimeSlice();
-		timeSlice.addClassifier(INSIDE_SCHEDULE, WORKED);
+//		timeSlice.addClassifier(INSIDE_SCHEDULE, WORKED);
+		timeSlice.addClassifier(ABSENCE,APPROVED, INSIDE_SCHEDULE);
 		timeSlice.setElapsed(3);
 		businessDay.addTimeSlice(timeSlice);
 			
 		schedule.addDayWorked(businessDay);
 		
 		
-		// June 30th
+		// June 30, 2006 - 8 inside working hours
 		businessDay = new BusinessDay();
 		businessDay.setDate(2006, 06, 30);
 		businessDay.setEmployee(emp);
@@ -159,7 +160,8 @@ public class DroolsTest {
 		businessDay.addTimeSlice(timeSlice);
 		
 		timeSlice = new TimeSlice();
-		timeSlice.addClassifier(INSIDE_SCHEDULE, WORKED);
+//		timeSlice.addClassifier(INSIDE_SCHEDULE, WORKED);
+		timeSlice.addClassifier(ABSENCE,APPROVED, INSIDE_SCHEDULE);
 		timeSlice.setElapsed(3);
 		businessDay.addTimeSlice(timeSlice);
 			
