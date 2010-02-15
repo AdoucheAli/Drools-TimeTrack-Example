@@ -1,0 +1,23 @@
+#created on: Feb 13, 2010
+package com.jboss.example
+
+#list any import classes here.
+
+expander InsideSchedule.dsl
+
+
+
+rule "test"
+
+when 
+	There is an employee
+	There is a Time Slice
+	There is a WeeklyAccumulator
+	- that belongs to the employee
+then
+	
+end
+
+#declare any global variables here
+
+
