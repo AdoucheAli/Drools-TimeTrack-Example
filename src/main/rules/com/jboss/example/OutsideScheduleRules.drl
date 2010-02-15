@@ -42,6 +42,8 @@ agenda-group "OutsideSchedule"
 			)			
 	then
 
+        System.out.println("[CBU072_JTP_Overtime_RuleSet]");
+        
 		# 3. Then add the duration of aTimeSlice to WeeklyAccumulator's WeeklyHoursTowardsOTThreshold,
 		$OT += $elapsed;
 
@@ -50,6 +52,8 @@ agenda-group "OutsideSchedule"
 
 		# 5. And compensate the overtime hours in cash at 1.0x with EC1400
 		$slice.addClassifier(TimeSliceClassifiers.EC1400, TimeSliceClassifiers.STRAIGHT);
+		
+        System.out.println("Accumulated totals - OT: " + $OT + ", FLSA: " + $FLSA + "\n");		
 end
 
 
@@ -77,6 +81,8 @@ rule "CBU072_OvertimeCashSplit_Rule"
 		
 		
 	then
+	
+	    System.out.println("[CBU072_OvertimeCashSplit_Rule]");
 		
 		# 3. Then add the duration of aTimeSlice to WeeklyAccumulator's WeeklyHoursTowardsOTThreshold,
 		$OT += $elapsed;
@@ -103,7 +109,8 @@ rule "CBU072_OvertimeCashSplit_Rule"
 		overtimeSlice.addClassifier(TimeSliceClassifiers.OVERTIME_REQUEST, TimeSliceClassifiers.PREMIUM, TimeSliceClassifiers.EC1405);
 		overtimeSlice.setSliceCreatedByRules(true);
 		$slice.getBusinessDay().addTimeSlice(overtimeSlice);
-		
+				
+        System.out.println("Accumulated totals - OT: " + $OT + ", FLSA: " + $FLSA + "\n");		
 end
 
 /*
@@ -131,6 +138,9 @@ rule "CBU072_OvertimeCashPremium_Rule"
 	
 		
 	then
+	
+	    System.out.println("[CBU072_OvertimeCashPremium_Rule]");
+	    
 		# 2. Then compensate the overtime hours in cash at 1.5x with EC1405,
 		$slice.addClassifier(TimeSliceClassifiers.OVERTIME_REQUEST, TimeSliceClassifiers.PREMIUM, TimeSliceClassifiers.EC1405);
 		
@@ -139,7 +149,6 @@ rule "CBU072_OvertimeCashPremium_Rule"
 
 		# 4. And add the duration of aTimeSlice to WeeklyAccumulator's WeeklyHours Towards FLSAThreshold,
 		$FLSA +=  $elapsed;
-
 		
+        System.out.println("Accumulated totals - OT: " + $OT + ", FLSA: " + $FLSA + "\n");		
 end
-
