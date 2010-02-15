@@ -10,7 +10,7 @@ rule "CBU072_Accumulation_QualifierRule"
 				classifiers contains(TimeSliceClassifiers.INSIDE_SCHEDULE)
 				)	
 	then
-		System.out.println("InsideSchedule Compensation");	
+		System.out.println("InsideSchedule Compensation\n");	
 		drools.getWorkingMemory().setFocus("InsideSchedule");
 end
 
@@ -33,7 +33,7 @@ rule "CBU072_InsideSchedule_worked_Accumulation_Rule"
 				)
 		
 	then
-	    System.out.println("[CBU072_InsideSchedule_worked_Accumulation_Rule]");
+	    System.out.println("Firing rule: [CBU072_InsideSchedule_worked_Accumulation_Rule]");
 		System.out.println("Worked: Count " + $elapsed + " hours towards OT and FLSA");
 
 		#Add the duration of the time slice to the weekly overtime threshold,
@@ -62,15 +62,15 @@ rule "CBU072_InsideSchedule_ExcusedAbsence_Accumulation_Rule"
 			)
 
 		$slice:  TimeSlice( 
-					classifiers contains(TimeSliceClassifiers.ABSENCE) ||
-					classifiers contains(TimeSliceClassifiers.OT) ||
+					classifiers contains(TimeSliceClassifiers.ABSENCE),
+					classifiers contains(TimeSliceClassifiers.OT),
 					classifiers contains(TimeSliceClassifiers.COUNT_TO_FLSA),
 					employee == $employee,
 					$elapsed: elapsed
 					)
 		
 	then
-	    System.out.println("[CBU072_InsideSchedule_ExcusedAbsence_Accumulation_Rule]");				
+	    System.out.println("Firing rule: [CBU072_InsideSchedule_ExcusedAbsence_Accumulation_Rule]");				
 		System.out.println("Excused Absence: Count " + $elapsed + " hours towards OT and FLSA");
 				
 		#Add the duration of the time slice to the weekly overtime threshold,
@@ -97,16 +97,16 @@ rule "CBU072_InsideSchedule_Absence_Accumulation_Rule"
 			)
 			
 		$slice : TimeSlice( 
-				classifiers contains TimeSliceClassifiers.ABSENCE ||
-				classifiers contains TimeSliceClassifiers.OT ||
+				classifiers contains TimeSliceClassifiers.ABSENCE,
+				classifiers contains TimeSliceClassifiers.OT,
 				classifiers not contains TimeSliceClassifiers.COUNT_TO_FLSA,
 				employee == $employee, 
 				$elapsed: elapsed
 			)
 		
 	then
-	    System.out.println("[CBU072_InsideSchedule_Absence_Accumulation_Rule]");
-		System.out.println("Absence: Count " + $elapsed + " hours to FLSA only");
+	    System.out.println("Firing rule: [CBU072_InsideSchedule_Absence_Accumulation_Rule]");
+		System.out.println("Absence: Count " + $elapsed + " hours towards FLSA only");
 
 		#Add the duration of the time slice to the weekly FLSA threshold,
 		$FLSA += $elapsed;

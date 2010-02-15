@@ -111,45 +111,45 @@ public class DroolsTest {
 		schedule.addDayWorked(businessDay);
 
 
-		// June 28, 2006 - 8 inside working hours
+		// June 28, 2006 - 5 outside working hours, 3 FLSA-approved working hours
 		businessDay = new BusinessDay();
 		businessDay.setDate(2006, 06, 28);
 		businessDay.setEmployee(emp);
 		
 		timeSlice = new TimeSlice();
-		timeSlice.addClassifier(INSIDE_SCHEDULE,WORKED);
+		timeSlice.addClassifier(OUTSIDE_SCHEDULE,WORKED);
 		timeSlice.setElapsed(5);
 		businessDay.addTimeSlice(timeSlice);
 		
 		timeSlice = new TimeSlice();
 //		timeSlice.addClassifier(INSIDE_SCHEDULE, WORKED);
-		timeSlice.addClassifier(ABSENCE,APPROVED, INSIDE_SCHEDULE);
+		timeSlice.addClassifier(ABSENCE,APPROVED, OUTSIDE_SCHEDULE, COUNT_TO_FLSA);
 		timeSlice.setElapsed(3);
 		businessDay.addTimeSlice(timeSlice);
 			
 		schedule.addDayWorked(businessDay);
 		
 	
-		// June 29, 2006 - 8 inside working hours
+		// June 29, 2006 - 5 outside working hours, 3 non-FLSA approved absence hours
 		businessDay = new BusinessDay();
 		businessDay.setDate(2006, 06, 29);
 		businessDay.setEmployee(emp);
 		
 		timeSlice = new TimeSlice();
-		timeSlice.addClassifier(INSIDE_SCHEDULE,WORKED);
+		timeSlice.addClassifier(OUTSIDE_SCHEDULE,WORKED);
 		timeSlice.setElapsed(5);
 		businessDay.addTimeSlice(timeSlice);
 		
 		timeSlice = new TimeSlice();
 //		timeSlice.addClassifier(INSIDE_SCHEDULE, WORKED);
-		timeSlice.addClassifier(ABSENCE,APPROVED, INSIDE_SCHEDULE);
+		timeSlice.addClassifier(ABSENCE,APPROVED, OUTSIDE_SCHEDULE);
 		timeSlice.setElapsed(3);
 		businessDay.addTimeSlice(timeSlice);
 			
 		schedule.addDayWorked(businessDay);
 		
 		
-		// June 30, 2006 - 8 inside working hours
+		// June 30, 2006 - 5 inside working hours, 3 non-FLSA approved absence hours
 		businessDay = new BusinessDay();
 		businessDay.setDate(2006, 06, 30);
 		businessDay.setEmployee(emp);

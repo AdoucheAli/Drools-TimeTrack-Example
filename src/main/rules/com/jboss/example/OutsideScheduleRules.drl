@@ -14,7 +14,7 @@ rule "CBU072_Overtime_QualifierRule"
 					classifiers contains(TimeSliceClassifiers.APPROVED)					
 				)				
 	then
-		System.out.println("OutsideSchedule Compensation");	
+		System.out.println("OutsideSchedule Compensation\n");	
 		drools.getWorkingMemory().setFocus("OutsideSchedule");
 end
 
@@ -42,14 +42,16 @@ agenda-group "OutsideSchedule"
 			)			
 	then
 
-        System.out.println("[CBU072_JTP_Overtime_RuleSet]");
+        System.out.println("Firing rule: [CBU072_JTP_Overtime_RuleSet]");
         
-		# 3. Then add the duration of aTimeSlice to WeeklyAccumulator's WeeklyHoursTowardsOTThreshold,
+		# 3. Then add the duration of a TimeSlice to WeeklyAccumulator's weeklyHoursTowardsOT threshold,
 		$OT += $elapsed;
+		$schedule.setWeeklyHoursTowardsOT($OT);
 
-		# 4. And add the duration of aTimeSlice to WeeklyAccumulator's WeeklyHours Towards FLSAThreshold 
+		# 4. And add the duration of a TimeSlice to WeeklyAccumulator's weeklyHours Towards FLSA threshold 
 		$FLSA +=  $elapsed;
-
+        $schedule.setWeeklyHoursTowardsFLSA($FLSA);
+        
 		# 5. And compensate the overtime hours in cash at 1.0x with EC1400
 		$slice.addClassifier(TimeSliceClassifiers.EC1400, TimeSliceClassifiers.STRAIGHT);
 		
@@ -82,13 +84,15 @@ rule "CBU072_OvertimeCashSplit_Rule"
 		
 	then
 	
-	    System.out.println("[CBU072_OvertimeCashSplit_Rule]");
+	    System.out.println("Firing rule: [CBU072_OvertimeCashSplit_Rule]");
 		
-		# 3. Then add the duration of aTimeSlice to WeeklyAccumulator's WeeklyHoursTowardsOTThreshold,
+		# 3. Then add the duration of a TimeSlice to WeeklyAccumulator's weeklyHoursTowardsOT threshold,
 		$OT += $elapsed;
+		$schedule.setWeeklyHoursTowardsOT($OT);
 	
-		# 4. And add the duration of aTimeSlice to WeeklyAccumulator's WeeklyHours Towards FLSAThreshold,
+		# 4. And add the duration of a TimeSlice to WeeklyAccumulator's weeklyHours Towards FLSAThreshold,
 		$FLSA +=  $elapsed;
+		$schedule.setWeeklyHoursTowardsFLSA($FLSA);
 	
 		# 5. And split the slice at the time when the slice crosses the weekly overtime threshold value of 40,
 		int remainder =  40 - $OT;
@@ -139,16 +143,18 @@ rule "CBU072_OvertimeCashPremium_Rule"
 		
 	then
 	
-	    System.out.println("[CBU072_OvertimeCashPremium_Rule]");
+	    System.out.println("Firing rule: [CBU072_OvertimeCashPremium_Rule]");
 	    
 		# 2. Then compensate the overtime hours in cash at 1.5x with EC1405,
 		$slice.addClassifier(TimeSliceClassifiers.OVERTIME_REQUEST, TimeSliceClassifiers.PREMIUM, TimeSliceClassifiers.EC1405);
 		
-		# 3. And add the duration of aTimeSlice to WeeklyAccumulator's WeeklyHoursTowardsOTThreshold,
+		# 3. And add the duration of a TimeSlice to WeeklyAccumulator's weeklyHoursTowardsOT threshold,
 		$OT += $elapsed;
+		$schedule.setWeeklyHoursTowardsOT($OT);
 
-		# 4. And add the duration of aTimeSlice to WeeklyAccumulator's WeeklyHours Towards FLSAThreshold,
+		# 4. And add the duration of a TimeSlice to WeeklyAccumulator's weeklyHoursTowardsFLSA threshold,
 		$FLSA +=  $elapsed;
+		$schedule.setWeeklyHoursTowardsFLSA($FLSA);
 		
         System.out.println("Accumulated totals - OT: " + $OT + ", FLSA: " + $FLSA + "\n");		
 end
