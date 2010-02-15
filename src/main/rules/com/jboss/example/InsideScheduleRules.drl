@@ -33,13 +33,16 @@ rule "CBU072_InsideSchedule_worked_Accumulation_Rule"
 				)
 		
 	then
-		System.out.println("Worked: Count towards OT and FLSA");
+	    System.out.println("[CBU072_InsideSchedule_worked_Accumulation_Rule]");
+		System.out.println("Worked: Count " + $elapsed + " hours towards OT and FLSA");
 
 		#Add the duration of the time slice to the weekly overtime threshold,
 		$OT += $elapsed;
 			
 		#Add the duration of the time slice to the weekly FLSA threshold.		
-		$FLSA +=  $elapsed;			
+		$FLSA +=  $elapsed;	
+		
+		System.out.println("Accumulated totals - OT: " + $OT + ", FLSA: " + $FLSA + "\n");		
 		
 end
 
@@ -64,8 +67,9 @@ rule "CBU072_InsideSchedule_ExcusedAbsence_Accumulation_Rule"
 					$elapsed: elapsed
 					)
 		
-	then				
-		System.out.println("Excused Absence: Count towards FLSA and OT");
+	then
+	    System.out.println("[CBU072_InsideSchedule_ExcusedAbsence_Accumulation_Rule]");				
+		System.out.println("Excused Absence: Count " + $elapsed + " hours towards OT and FLSA");
 				
 		#Add the duration of the time slice to the weekly overtime threshold,
 		$OT += $elapsed;
@@ -73,6 +77,7 @@ rule "CBU072_InsideSchedule_ExcusedAbsence_Accumulation_Rule"
 		#Add the duration of the time slice to the weekly FLSA threshold.		
 		$FLSA +=  $elapsed;
 		
+		System.out.println("Accumulated totals - OT: " + $OT + ", FLSA: " + $FLSA + "\n");		
 end
 
 
@@ -96,13 +101,11 @@ rule "CBU072_InsideSchedule_Absence_Accumulation_Rule"
 			)
 		
 	then
-		System.out.println("Absence: Count to FLSA but not OT");
+	    System.out.println("[CBU072_InsideSchedule_Absence_Accumulation_Rule]");
+		System.out.println("Absence: Count " + $elapsed + " hours to FLSA only");
 
-		#Add the duration of the time slice to the weekly overtime threshold,
-		$OT += $elapsed;
+		#Add the duration of the time slice to the weekly FLSA threshold,
+		$FLSA += $elapsed;
+		
+		System.out.println("Accumulated totals - OT: " + $OT + ", FLSA: " + $FLSA + "\n");		
 end
-
-
-
-
-
