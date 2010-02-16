@@ -1,0 +1,22 @@
+#
+# Instructions for executing POC outside of an IDE
+#
+
+1) Execute: 
+   
+   ./maven_install.sh
+
+   This will load a maven build dependency.
+
+2) Execute:
+
+   ./mvn clean install
+
+   This will build the ./target/timekeeper-1.0.0.jar file.
+
+3) Execute:
+
+   ./run.sh
+
+   This will execute the java runtime (requires JDK 1.5 or later).
+
