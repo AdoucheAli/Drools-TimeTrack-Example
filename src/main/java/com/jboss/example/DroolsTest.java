@@ -63,7 +63,7 @@ public class DroolsTest {
 	}
 
 	
-	public static Employee buildEmployee() {
+	private static Employee buildEmployee() {
 		
 		Employee emp = new Employee();		
 		emp.setEmployeeNumber(123);
@@ -73,101 +73,138 @@ public class DroolsTest {
 		schedule.setDailyHours(8);
 		schedule.setWeeklyHours(40);
 		schedule.addClassifier(ScheduleClassifiers.STANDARD);
-		emp.setSchedule(schedule);		
+		emp.setSchedule(schedule);	
 		
-		// June 26, 2006 - 5 inside working hours + 3 approved inside absence hours
+		addInsideSlices(emp, businessDay, schedule);
+		addOutsideSlices(emp, businessDay, schedule);
+		
+		return emp;
+	}
+	
+	private static void addInsideSlices(Employee emp, BusinessDay businessDay, WeeklyAccumulator schedule) {
+		
+		// June 26, 2006
 		businessDay.setDate(2006,06, 26);		
 		businessDay.setEmployee(emp);
 		
 		schedule.addDayWorked(businessDay);	
 		
-		TimeSlice timeSlice = new TimeSlice();
-		timeSlice.addClassifier(WORKED,INSIDE_SCHEDULE);
+		// Trigger InsideSchedule_worked_Accumulation_Rule
+		TimeSlice timeSlice = createInsideScheduleBaseTimeSlice();
+		timeSlice.addClassifier(WORKED);
 		timeSlice.setStart(businessDay.getDate());
 		timeSlice.setEnd(businessDay.getDate());
-		timeSlice.setElapsed(5);
-//		timeSlice.setEmployee(emp);
-		businessDay.addTimeSlice(timeSlice);
-		timeSlice = new TimeSlice();
-		timeSlice.addClassifier(ABSENCE,APPROVED, INSIDE_SCHEDULE);
-		timeSlice.setElapsed(3);
+		timeSlice.setElapsed(8);
 		businessDay.addTimeSlice(timeSlice);
 		
-		// June 27, 2006 - 5 inside working hours + 5 outside working hours (2 OT)
+		
+		// June 27, 2006
 		businessDay = new BusinessDay();
 		businessDay.setDate(2006, 06, 27);
 		businessDay.setEmployee(emp);
 		
-		timeSlice = new TimeSlice();
-		timeSlice.addClassifier(INSIDE_SCHEDULE,WORKED);
-		timeSlice.setElapsed(5);
+		// Trigger InsideSchedule_worked_Accumulation_Rule
+		timeSlice = createInsideScheduleBaseTimeSlice();
+		timeSlice.addClassifier(WORKED);
+		timeSlice.setElapsed(8);
 		businessDay.addTimeSlice(timeSlice);
 
-		timeSlice = new TimeSlice();
-		timeSlice.addClassifier(OUTSIDE_SCHEDULE,WORKED,APPROVED,OVERTIME_REQUEST,CASH,INVOLUNTARY);
-		timeSlice.setElapsed(5);
+		// No rule trigger - no absence
+		timeSlice = createInsideScheduleBaseTimeSlice();
+		timeSlice.addClassifier(WORKED,APPROVED,OVERTIME_REQUEST,CASH,INVOLUNTARY,COUNT_TO_FLSA);
+		timeSlice.setElapsed(3);
 		businessDay.addTimeSlice(timeSlice);
 		
 		schedule.addDayWorked(businessDay);
+		
 
-
-		// June 28, 2006 - 5 outside working hours, 3 FLSA-approved working hours
+		// June 28, 2006
 		businessDay = new BusinessDay();
 		businessDay.setDate(2006, 06, 28);
 		businessDay.setEmployee(emp);
 		
-		timeSlice = new TimeSlice();
-		timeSlice.addClassifier(OUTSIDE_SCHEDULE,WORKED);
+		// Trigger InsideSchedule_worked_Accumulation_Rule
+		timeSlice = createInsideScheduleBaseTimeSlice();
+		timeSlice.addClassifier(WORKED);
 		timeSlice.setElapsed(5);
 		businessDay.addTimeSlice(timeSlice);
 		
-		timeSlice = new TimeSlice();
-//		timeSlice.addClassifier(INSIDE_SCHEDULE, WORKED);
-		timeSlice.addClassifier(ABSENCE,APPROVED, OUTSIDE_SCHEDULE, COUNT_TO_FLSA);
+		// No rule trigger - no OT
+		timeSlice = createInsideScheduleBaseTimeSlice();
+		timeSlice.addClassifier(ABSENCE, APPROVED, COUNT_TO_FLSA);
 		timeSlice.setElapsed(3);
 		businessDay.addTimeSlice(timeSlice);
 			
 		schedule.addDayWorked(businessDay);
 		
 	
-		// June 29, 2006 - 5 outside working hours, 3 non-FLSA approved absence hours
+		// June 29, 2006
 		businessDay = new BusinessDay();
 		businessDay.setDate(2006, 06, 29);
 		businessDay.setEmployee(emp);
 		
-		timeSlice = new TimeSlice();
-		timeSlice.addClassifier(OUTSIDE_SCHEDULE,WORKED);
+		// Trigger InsideSchedule_worked_Accumulation_Rule
+		timeSlice = createInsideScheduleBaseTimeSlice();
+		timeSlice.addClassifier(WORKED);
 		timeSlice.setElapsed(5);
 		businessDay.addTimeSlice(timeSlice);
 		
-		timeSlice = new TimeSlice();
-//		timeSlice.addClassifier(INSIDE_SCHEDULE, WORKED);
-		timeSlice.addClassifier(ABSENCE,APPROVED, OUTSIDE_SCHEDULE);
+		// Trigger InsideSchedule_ExcusedAbsence_Accumulation_Rule
+		timeSlice = createInsideScheduleBaseTimeSlice();
+		timeSlice.addClassifier(ABSENCE, APPROVED, OT, COUNT_TO_FLSA);
 		timeSlice.setElapsed(3);
 		businessDay.addTimeSlice(timeSlice);
 			
 		schedule.addDayWorked(businessDay);
 		
 		
-		// June 30, 2006 - 5 inside working hours, 3 non-FLSA approved absence hours
+		// June 30, 2006
 		businessDay = new BusinessDay();
 		businessDay.setDate(2006, 06, 30);
 		businessDay.setEmployee(emp);
 		
-		timeSlice = new TimeSlice();
-		timeSlice.addClassifier(INSIDE_SCHEDULE,WORKED);
+		// Trigger InsideSchedule_worked_Accumulation_Rule
+		timeSlice = createInsideScheduleBaseTimeSlice();
+		timeSlice.addClassifier(WORKED);
 		timeSlice.setElapsed(5);
 		businessDay.addTimeSlice(timeSlice);
 		
-		timeSlice = new TimeSlice();
-//		timeSlice.addClassifier(INSIDE_SCHEDULE, WORKED);
-		timeSlice.addClassifier(ABSENCE,APPROVED, INSIDE_SCHEDULE);
+		// Trigger InsideSchedule_Absence_Accumulation_Rule
+		timeSlice = createInsideScheduleBaseTimeSlice();
+		timeSlice.addClassifier(ABSENCE, APPROVED, OT);
 		timeSlice.setElapsed(3);
 		businessDay.addTimeSlice(timeSlice);
 			
 		schedule.addDayWorked(businessDay);
 		
-		return emp;
+	}
+	
+	private static void addOutsideSlices(Employee emp, BusinessDay businessDay, WeeklyAccumulator schedule) {
+		
+		// July 1, 2006
+		businessDay.setDate(2006, 07, 01);		
+		businessDay.setEmployee(emp);
+		
+		schedule.addDayWorked(businessDay);	
+		
+		// Trigger JTP_Overtime_RuleSet
+		TimeSlice timeSlice = createOutsideScheduleBaseTimeSlice();
+		timeSlice.setStart(businessDay.getDate());
+		timeSlice.setEnd(businessDay.getDate());
+		timeSlice.setElapsed(8);
+		businessDay.addTimeSlice(timeSlice);
+	}
+	
+	private static TimeSlice createInsideScheduleBaseTimeSlice() {
+		TimeSlice timeSlice = new TimeSlice();
+		timeSlice.addClassifier(INSIDE_SCHEDULE);
+		return timeSlice;
+	}
+	
+	private static TimeSlice createOutsideScheduleBaseTimeSlice() {
+		TimeSlice timeSlice = new TimeSlice();
+		timeSlice.addClassifier(OUTSIDE_SCHEDULE, WORKED, INVOLUNTARY, OVERTIME_REQUEST, CASH, APPROVED);
+		return timeSlice;
 	}
 
 }
